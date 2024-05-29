@@ -34,7 +34,7 @@ ggplot(separate_genre_df, aes(x = count, y = Genre) +
         text = element_text(size=15),
         panel.background = element_blank())
         
-# ham veride numerik olan yıl değişkenini 2 nolu grafikte kullanmak üzere kategorik değişkene çeviriyorum 
+# ham verideki yıl değişkenini 2 nolu grafikte kullanmak üzere kategorik değişkene çeviriyorum 
 year_cat_imdb <- within(imdb_top_1000, {   
   year.cat <- NA 
   year.cat[2000 <= Released_Year] <- "2000 Sonrası"
